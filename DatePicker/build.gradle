@@ -2,11 +2,10 @@ apply plugin: 'com.android.library'
 group='com.github.MirShu'
 
 android {
-    compileSdk 32
-    buildToolsVersion = "30.0.3"
+    compileSdk rootProject.ext.compileSdkVersion
     defaultConfig {
-        minSdk 21
-        targetSdk 32
+        minSdk rootProject.ext.minSdkVersion
+        targetSdk rootProject.ext.targetSdkVersion
         versionCode 1
         versionName "1.0"
     }

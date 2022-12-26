@@ -8,3 +8,16 @@ plugins {
 task clean(type: Delete) {
     delete rootProject.buildDir
 }
+
+ext {
+    compileSdkVersion = 30
+    minSdkVersion = 21
+    targetSdkVersion = 27
+    buildToolsVersion = "30.0.3"
+    versionCode = 1
+    versionName = "4.3.81"
+    abiFilters = 'arm64-v8a'//'arm64-v8a', 'armeabi-v7a', 'x86', 'armeabi'
+    arguments = "-DANDROID_STL=c++_shared"
+    cppFlags = "-std=c++11"
+    constraintLayoutVersion = '1.1.3'
+}
